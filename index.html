@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <input type="text" id="example" placeholder="Nhập điểm thí sinh" onchange="inputHandler(event)"/>
+
+    <script type="text/javascript">
+        const inputHandler = document.getElementById("example")
+        inputHandler.addEventListener('change', updateValue)
+        function updateValue(e) {
+           const diem = e.target.value;
+           if (parseInt(diem) <=5){
+            alert("Hoc luc trung binh!")
+           }
+           else if (parseInt(diem) > 5 && parseInt(diem) <=6){
+            alert("Hoc luc kha!")
+           }
+           else if (parseInt(diem) > 6 && parseInt(diem) <=8){
+            alert("Hoc luc kha gioi!")
+           }
+           else if (parseInt(diem) > 8){
+            alert("Hoc luc gioi!")
+           }
+        }
+    </script>
+</body>
+
+
+
+</html>
