@@ -6,12 +6,20 @@
     margin-top: 20px;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+
+.search-group{
+    display: flex;
+}
+
+.span{
+    margin-right: 20px;
 }
 
 .item-container{
     padding: 10px;
     border-radius: 8px;
-    border-color: black;
+    border-color: rgb(0, 140, 255) !important;
     border: solid;
 }

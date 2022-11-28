@@ -10,6 +10,7 @@ async function getData() {
         return result
     }).catch(error => { console.log(error); })
     list = response
+    console.log(response);
     show(response)
 }
 
@@ -23,6 +24,7 @@ function show(data) {
             <div>Name: ${item.name}</div>
             <div>Email: ${item.email}</div>
             <div>Phone: ${item.phone}</div>
+            <div>Address: ${item.address.street}--${item.address.suite}--${item.address.city}</div>
         </div>`
     })
 
