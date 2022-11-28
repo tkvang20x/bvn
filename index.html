@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index.js"></script>
+    <script src="index.js" type="module">
+    </script>
 </head>
 
 <body>
-    <input type="text" id="example" placeholder="Nhập điểm thí sinh" onchange="inputHandler(event)"/>
+    <input type="text" id="example" placeholder="Nhập điểm thí sinh" onchange="(event) =>inputHandler(event)"/>
 
     <script type="text/javascript">
+
+
         const inputHandler = document.getElementById("example")
         inputHandler.addEventListener('change', updateValue)
         function updateValue(e) {
@@ -30,6 +33,7 @@
             alert("Hoc luc gioi!")
            }
         }
+        
     </script>
 </body>
 
